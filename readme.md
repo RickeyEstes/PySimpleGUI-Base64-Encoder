@@ -2,40 +2,32 @@
 
 ## Convert An Entire Folder Of Images Into Python Code
 
-![PSG CPU Cores Scrolling](https://user-images.githubusercontent.com/46163555/71864004-99cc8300-30cc-11ea-805c-de04b0b2296b.gif)
 
+### Convert a folder full of these
 
-## Requirements
+![image](https://user-images.githubusercontent.com/46163555/71944932-4ec97300-3193-11ea-94c7-819d13cdb2dd.png)
 
-To use the GUI you'll need to install PySimpleGUI (http://www.PySimpleGUI.org for instructions)
+### Into a file full of these
 
-One of these will install it for you.
-```
-pip install PySimpleGUI
-pip3 install PySimpleGUI
-```
+![image](https://user-images.githubusercontent.com/46163555/71944990-846e5c00-3193-11ea-83e6-6f6f5124d8f7.png)
 
-You will also need to install the psutil package.
 
 ## Running
 
-Once the pacakges are installed, you only need to run the single Python file found in this repository - `PySimpleGUI_Rainmeter_CPU_Cores.py`
+When you run the program you'll see this window.
 
-When running on Windows, launching with `pythonw` instead of plain `python` will start the program without showing a console window.
+![image](https://user-images.githubusercontent.com/46163555/71944794-e5e1fb00-3192-11ea-9d18-c997c9c7ae5b.png)
 
-## "Rainmeter" Styling
+You can either paste in the path to the folder of images or use the Browse button to locate the folder.  Once entered, click OK and the images will be converted into Base64 strings which is written to a file named `output.py`
 
-Achieving a "rainmeter" styling to your PySimpleGUI windows is not difficult.  It only requires setting a few parameters in the call to create the window.  Those 3 parameters are:
+## Why Do It?
 
-1. No titlebar
-2. Grab anywhere
-3. Alpha Channel of 0.8
+If you're developing a GUI program, sometimes it easier to include all of your assets in the file with the source code itself.  This will enable you to distribute your application by providing a single .py file instead of several files that may get separated.  Distributing applications is still a challenge with Python.  This technique makes the jobs a little bit easier.
 
-The result is a bornerless window that's transparent and can be moved by grabbing the window by clicking anywhere in the window using your mouse and dragging.
+It's particuarly good when creating PySimpleGUI programs.  You can pass base64 images when creating `Buttons` and `Images` as well as specifying the program's icon.
 
-![SNAG-0665](https://user-images.githubusercontent.com/46163555/71864394-ad2c1e00-30cd-11ea-85f5-9850ed7df69e.jpg)
 
-## Hungry for more?
+## Hungry for more PySimpleGUI applications?
 
 If you want more examples like tthis one to help in creating your GUI, then be sure and check out the many programs found at http://Demos.PySimpleGUI.org. 
 
